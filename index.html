@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="site.css">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="bodyContainer">
+        <div class="buttonContainer">
+            <div class="header">Stock Ticker</div>
+            <input id="ticker" type="text" placeholder="ex. AAPL">
+            <button onClick="stockTicker()">Enter Quote</button>
+        </div>
+    
+        <div class="container">
+            <div class="tickerDoesNotExist"></div>
+            <div class="tickerText clear"></div>
+            <div class="stockName clear"></div>
+            <div class="lastAvailPrice clear"></div>
+            
+            <div class="priceContainer">
+                <table id="dataTable" class="table">
+                    <tr>
+                        <td class="openPrice clear"></td>
+                        <td class="lowPrice clear"></td>
+                        <td class="highPrice clear"></td>
+                        <td class="closePrice clear"></td>
+                    </tr>
+            </table>
+            </div>
+         
+        </div>
+        <div id="myDiv"></div>
+    </div>
+    
+    <script src="stock-tracker.js"></script>
+    <script src="TableCSVExporter.js"></script>
+    
+</body>
+</html>
