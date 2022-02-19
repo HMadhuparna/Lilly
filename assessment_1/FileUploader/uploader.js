@@ -66,8 +66,7 @@ Uploader.prototype = {
     buildMessage : function(elements, boundary) {
         var CRLF  = "\r\n";
         var parts = [];
-
-        elements.forEach(function(element, index, all) {
+       elements.forEach(function(element, index, all) {
             var part = "";
             var type = "TEXT";
 
@@ -123,7 +122,6 @@ Uploader.prototype = {
 
         return request;
     },
-
     /**
      * @return null
      */
